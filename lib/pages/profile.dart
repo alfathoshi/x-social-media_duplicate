@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../widget/timeline.dart';
 
 class ProfiePage extends StatelessWidget {
@@ -14,7 +13,8 @@ class ProfiePage extends StatelessWidget {
           body: CustomScrollView(
         slivers: [
           SliverAppBar.large(
-            
+            shape: const Border(bottom: BorderSide(color: Colors.white10)),
+            expandedHeight: 150,
             title: Text(
               'Alex Tomahawk',
               style: GoogleFonts.inter(fontWeight: FontWeight.bold),
