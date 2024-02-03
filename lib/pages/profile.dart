@@ -13,7 +13,9 @@ class ProfiePage extends StatelessWidget {
           body: CustomScrollView(
         slivers: [
           SliverAppBar.large(
-            shape: const Border(bottom: BorderSide(color: Colors.white10)),
+            shape: const Border(
+              bottom: BorderSide(color: Colors.white10),
+            ),
             expandedHeight: 150,
             title: Text(
               'Alex Tomahawk',
