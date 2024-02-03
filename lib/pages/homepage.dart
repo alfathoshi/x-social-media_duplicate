@@ -12,7 +12,11 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          shape: const Border(bottom: BorderSide(color: Colors.white12)),
+          shape: const Border(
+            bottom: BorderSide(
+              color: Colors.white12,
+            ),
+          ),
           title: Image.asset(
             'assets/images/Logo.png',
             scale: 16,

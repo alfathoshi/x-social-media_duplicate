@@ -15,11 +15,20 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   int _selectedIndex = 0;
 
+  bool click = true;
+
   void _navigateBottomBar(int index) {
     setState(() {
       _selectedIndex = index;
+      if (_selectedIndex == 4) {
+        click = false;
+      } else {
+        click = true;
+      }
     });
   }
+
+  
 
   final List<Widget> _pages = [
     const HomePage(),
@@ -32,6 +41,17 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+        ),
+        child: Icon(
+          (click == false) ? Icons.message : Icons.add,
+        ),
+      ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
