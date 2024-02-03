@@ -1,5 +1,6 @@
 import 'package:bintang_motionintern_week_3_assignment/pages/bookmark.dart';
 import 'package:bintang_motionintern_week_3_assignment/pages/lists.dart';
+import 'package:bintang_motionintern_week_3_assignment/pages/premium.dart';
 import 'package:bintang_motionintern_week_3_assignment/pages/profile.dart';
 import 'package:bintang_motionintern_week_3_assignment/pages/spaces.dart';
 import 'package:flutter/material.dart';
@@ -103,11 +104,18 @@ class SideBar extends StatelessWidget {
                         'assets/images/Logo.png',
                         scale: 18,
                       ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => PremiumPage(),
+                          ),
+                        );
+                      },
                     ),
                     ListTile(
                       title: const Text('Bookmark'),
                       leading: const Icon(Icons.bookmark),
-                       onTap: () {
+                      onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => const BookmarkPage(),
@@ -118,7 +126,7 @@ class SideBar extends StatelessWidget {
                     ListTile(
                       title: const Text('Lists'),
                       leading: const Icon(Icons.list),
-                       onTap: () {
+                      onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => const ListPage(),
@@ -129,7 +137,7 @@ class SideBar extends StatelessWidget {
                     ListTile(
                       title: const Text('Spaces'),
                       leading: const Icon(Icons.mic),
-                       onTap: () {
+                      onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => const SpacesPage(),

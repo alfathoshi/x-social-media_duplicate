@@ -27,7 +27,7 @@ class CommunityPage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.people))
         ],
       ),
-      drawer: SideBar(),
+      drawer: const SideBar(),
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
@@ -105,13 +105,17 @@ class CommunitiesCard extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            const Row(
+            Row(
               children: [
-                CircleAvatar(),
-                CircleAvatar(),
-                CircleAvatar(),
-                CircleAvatar(),
-                CircleAvatar(),
+                for (int i = 0; i < 5; i++)
+                  const Align(
+                    widthFactor: 0.6,
+                    child: CircleAvatar(
+                      radius: 20,
+                      backgroundColor: Colors.black,
+                      child: CircleAvatar(radius: 18,),
+                    ),
+                  )
               ],
             )
           ],
