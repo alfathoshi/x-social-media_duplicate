@@ -114,7 +114,7 @@ class PremiumPage extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton.extended(
        
-        extendedPadding: EdgeInsets.all(120),
+        extendedPadding: const EdgeInsets.all(120),
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         onPressed: () {},

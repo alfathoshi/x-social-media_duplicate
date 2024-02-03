@@ -27,7 +27,7 @@ class SpacesPage extends StatelessWidget {
           },
         ),
       ),
-      drawer: SideBar(),
+      drawer: const SideBar(),
       body: const Center(
         child: Text(
           'Spaces Page',

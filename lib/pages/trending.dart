@@ -35,7 +35,7 @@ class TrendingPage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.settings))
         ],
       ),
-      drawer: SideBar(),
+      drawer: const SideBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -152,7 +152,7 @@ class TrendingPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
                   const Icon(
@@ -160,7 +160,7 @@ class TrendingPage extends StatelessWidget {
                     size: 32,
                     color: Colors.blue,
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Text(
                     'Topic',
                     style: GoogleFonts.inter(
@@ -261,6 +261,7 @@ class VideosFY extends StatelessWidget {
     super.key,
     required this.view,
   });
+  @override
   Widget build(BuildContext context) {
     return Container(
       height: 240,

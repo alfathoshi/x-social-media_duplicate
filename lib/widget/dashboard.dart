@@ -6,7 +6,7 @@ import '../pages/notification.dart';
 import '../pages/trending.dart';
 
 class Dashboard extends StatefulWidget {
-  Dashboard({super.key});
+  const Dashboard({super.key});
 
   @override
   State<Dashboard> createState() => _DashboardState();

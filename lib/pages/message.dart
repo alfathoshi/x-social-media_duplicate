@@ -11,7 +11,7 @@ class MessagePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: const SearchBar(
-          hintText: 'Search X',
+          hintText: 'Search Direct Messages',
           constraints: BoxConstraints(minHeight: 40),
           elevation: MaterialStatePropertyAll(20),
           backgroundColor: MaterialStatePropertyAll(Colors.white10),

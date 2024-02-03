@@ -113,7 +113,9 @@ class CommunitiesCard extends StatelessWidget {
                     child: CircleAvatar(
                       radius: 20,
                       backgroundColor: Colors.black,
-                      child: CircleAvatar(radius: 18,),
+                      child: CircleAvatar(
+                        radius: 18,
+                      ),
                     ),
                   )
               ],

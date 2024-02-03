@@ -23,7 +23,7 @@ class NotificationPage extends StatelessWidget {
               ),
             );
           }),
-          actions: [IconButton(onPressed: () {}, icon: Icon(Icons.settings))],
+          actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.settings))],
           bottom: const TabBar(
             indicatorColor: Colors.blue,
             labelColor: Colors.white,
@@ -44,8 +44,8 @@ class NotificationPage extends StatelessWidget {
             ],
           ),
         ),
-        drawer: SideBar(),
-        body: Center(
+        drawer: const SideBar(),
+        body: const Center(
           child: Text('Notification'),
         ),
       ),
