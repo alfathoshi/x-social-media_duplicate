@@ -1,4 +1,4 @@
-# bintang_motionintern_week_3_assignment
+# X social media duplicate
 
 ![image](https://github.com/alfathoshi/bintang_motionintern_week_3_assignment/assets/134042931/1918e98f-a5cd-465c-a9d8-20c541e300f8)
 ![image](https://github.com/alfathoshi/bintang_motionintern_week_3_assignment/assets/134042931/20ff2300-ce84-46b9-8a6c-d722a6cddd85)
